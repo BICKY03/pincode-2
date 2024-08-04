@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <div class="text-container">
+            <h1 class="check-out">Checkout</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam duis vitae curabitur amet, fermentum lorem.</p>
+        </div>
+        
+        <form id="pincodeForm">
+            <div class="form">
+                <div class="row">
+                    <div class="input-group">
+                        <label for="first-name">First name  <span style="color: red;">*</span></label>
+                        <input type="text" id="first-name" placeholder="Your name" required>
+                       
+                    </div>
+                    <div class="input-group">
+                        <label for="last-name">Last name <span style="color: red;">*</span></label>
+                        <input type="text" id="last-name" placeholder="Your last name" required>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label for="email">E-mail <span style="color: red;">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="yourmail@gmail.com" required>
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 13.5L0 6V18C0 18.5304 0.210714 19.0391 0.585786 19.4142C0.960859 19.7893 1.46957 20 2 20H22C22.5304 20 23.0391 19.7893 23.4142 19.4142C23.7893 19.0391 24 18.5304 24 18V6L12 13.5ZM12 11L22 4H2L12 11ZM12 13.5L0 6V18C0 18.5304 0.210714 19.0391 0.585786 19.4142C0.960859 19.7893 1.46957 20 2 20H22C22.5304 20 23.0391 19.7893 23.4142 19.4142C23.7893 19.0391 24 18.5304 24 18V6L12 13.5Z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label for="pincode">Pincode  <span style="color: red;">*</span> </label>
+                    <input type="text" id="pincode" placeholder="123456" required>
+                </div>
+            </div>
+            
+            
+           
+            <div class="checkbox-group">
+                <input type="checkbox" id="subscribe" required>
+                <label for="subscribe">Stay updated with our latest products, exclusive offers, and special promotions by opting in to receive marketing emails from us. You can unsubscribe at any time.</label>
+            </div>
+            <div class="submit-type">
+                <button type="submit">Enter</button>
+            </div>
+
+
+
+        </form>
+
+        
+        <div id="popupForm" >
+            <div class="popup-container">
+                <h3>Delivery Details</h3>
+                <div id="pincodeDetails"></div>
+                <button type="button" class="cancel-btn" onclick="closePopup()">Close</button>
+            </div>
+        </div>
+
+        
+       <script src="script.js"></script>
+    </div>
+</body>
+</html>
